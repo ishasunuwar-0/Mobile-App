@@ -3,38 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Explorer - Home</title>
+    <title>KaJaney</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts.js" defer></script> <!-- Link to your jQuery file -->
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Food Explorer</div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">KaJaney</h1>
+                <ul class="nav-links">
+                    <li><a href="#marketing">Marketing</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#community">Community Engagement</a></li>
+                </ul>
             </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="marketing.html">Marketing</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="community.html">Community Engagement</a></li>
-            </ul>
         </nav>
+        <div class="container">
+            <h2 class="heading">Discover Food Adventures Near You</h2>
+            <p class="subheading">Dive into a world of culinary delights with Food Explorer. From hidden gems to popular hotspots, explore local food scenes like never before.</p>
+        </div>
     </header>
 
-    <main>
-        <section id="landing">
-            <h1>Welcome to Food Explorer</h1>
-            <p>Your journey to discover delicious food starts here.</p>
-        </section>
-    </main>
+    <section class="features">
+        <div class="container">
+            <div class="feature-item">
+                <img src="images/vector-14.svg" class="feature-icon" alt="Interactive Maps" />
+                <h2 class="feature-title">Interactive Maps</h2>
+            </div>
+            <div class="feature-item">
+                <img src="images/vector-21.svg" class="feature-icon" alt="Vlogger Insights" />
+                <h2 class="feature-title">Vlogger Insights</h2>
+            </div>
+            <div class="feature-item">
+                <img src="images/vector-28.svg" class="feature-icon" alt="Top Recommendations" />
+                <h2 class="feature-title">Top Recommendations</h2>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2023 Food Explorer. All rights reserved.</p>
+    <section class="call-to-action">
+        <div class="container">
+            <button class="explore-button" id="explore-button">Explore Now</button>
+            <button class="learn-more-button">Learn More</button>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="container">
+            <div class="slider-content">
+                <img src="images/node-54.png" class="slider-image" alt="Vlogger Videos" />
+                <img src="images/node-57.png" class="slider-image" alt="Local Food Spots" />
+                <img src="images/node-60.png" class="slider-image" alt="Food Experience" />
+            </div>
+        </div>
+    </section>
+
+    <section class="discover-local-food" id="about">
+        <div class="container">
+            <h2 class="subheading">Discover the Best of Local Food</h2>
+            <p class="description">Your Culinary Guide Awaits. Food Explorer is your ultimate companion for discovering the best food spots, personalized to your preferences.</p>
+            <div class="features-list">
+                <div class="feature">
+                    <img src="images/vector-80.svg" class="feature-icon" alt="Personalized Recommendations" />
+                    <h3 class="feature-title">Personalized Recommendations</h3>
+                    <p class="feature-description">Get tailored suggestions based on your taste and preferences.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/vector-88.svg" class="feature-icon" alt="Interactive Food Maps" />
+                    <h3 class="feature-title">Interactive Food Maps</h3>
+                    <p class="feature-description">Navigate through local food spots with user-friendly maps.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/vector-96.svg" class="feature-icon" alt="Authentic Reviews" />
+                    <h3 class="feature-title">Authentic Reviews</h3>
+                    <p class="feature-description">Read genuine reviews from food vloggers and fellow explorers.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/vector-104.svg" class="feature-icon" alt="Diverse Cuisines" />
+                    <h3 class="feature-title">Diverse Cuisines</h3>
+                    <p class="feature-description">Explore a variety of cuisines from around the world.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/vector-112.svg" class="feature-icon" alt="Seamless Integration" />
+                    <h3 class="feature-title">Seamless Integration</h3>
+                    <p class="feature-description">Connect with restaurants and book your next food adventure.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/vector-120.svg" class="feature-icon" alt="Community Driven" />
+                    <h3 class="feature-title">Community Driven</h3>
+                    <p class="feature-description">Join a community of food enthusiasts sharing their experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="subheading">How Food Explorer Works</h2>
+            <p class="description">Watch how Food Explorer connects you to the best local food experiences through vlogger videos, menus, and maps.</p>
+        </div>
+    </section>
+
+    <section class="interactive-map" id="community">
+        <div class="container">
+            <h2 class="subheading">Explore with Our Interactive Map</h2>
+            <p class="description">Use our map to discover nearby restaurants, cafes, and food markets. Plan your next food adventure effortlessly.</p>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+            <p class="map-title">Top Food Spots in Your Area</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <p>About Food Explorer</p>
+                <p>Discover Features</p>
+                <p>Explore Maps</p>
+                <p>Watch Videos</p>
+                <p>Contact Us</p>
+            </div>
+            <p class="footer-text">© 2023 Food Explorer. Discover your next favorite food spot.</p>
+        </div>
     </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
