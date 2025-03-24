@@ -1,0 +1,102 @@
+:root {
+    --font-family-roboto: 'Roboto', sans-serif;
+    --font-family-lato: 'Lato', sans-serif;
+    --font-family-poppins: 'Poppins', sans-serif;
+    --color-black: rgba(0, 0, 0, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --text-rgb-15-23-42: rgba(15, 23, 42, 1);
+    --text-rgb-71-85-105: rgba(71, 85, 105, 1);
+    --text-white: rgba(255, 255, 255, 1);
+    --text-rgb-255-87-51: rgba(255, 87, 51, 1);
+    --text-rgb-55-65-81: rgba(55, 65, 81, 1);
+    --text-rgb-219-63-35: rgba(219, 63, 35, 1);
+    --text-rgb-26-115-232: rgba(26, 115, 232, 1);
+    --text-black: rgba(0, 0, 0, 1);
+    --text-rgb-75-85-99: rgba(75, 85, 99, 1);
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--color-white);
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: var(--text-rgb-15-23-42);
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: var(--text-rgb-71-85-105);
+}
+
+/* Button Styles */
+.explore-button, .learn-more-button {
+    background-color: var(--text-rgb-255-87-51);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.explore-button:hover, .learn-more-button:hover {
+    background-color: var(--text-rgb-219-63-35);
+}
+
+/* Other Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add more styles as needed */
